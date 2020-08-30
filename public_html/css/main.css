@@ -1,0 +1,71 @@
+* {
+    color: rgb(250,250,250)
+}
+
+.hide {
+    display: none;
+}
+
+#panel {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(10,10,10,0.9);
+}
+
+#todolist ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#todolist ul li {
+    padding: 0 10px;
+    height: 60px;
+}
+
+#todolist ul li:hover {
+    background-color: rgba(100,100,100,0.5);
+}
+
+#todolist .checkbox {
+    float: left;
+    position: relative;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(180, 180, 180);
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+#todolist li.complete .checkbox {
+    text-align: center;
+    line-height: 120%;
+    background-color: rgb(100, 100, 100);
+}
+
+#todolist .content, .new_content {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    transform: translateY(72%);
+    min-width: 400px;
+}
+
+#todolist li.complete .content {
+    text-decoration: line-through;
+}
+
+#todolist .actions {
+    float: right;
+    position: relative;
+    transform: translateY(25px);
+}
+
+#todolist .actions .delete {
+    height: 15px;
+    line-height: 10px;
+    cursor: pointer;
+}
